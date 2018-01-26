@@ -88,6 +88,7 @@
         <finalName>springboottest</finalName>
         <plugins>
         	<!-- 2018-01-24 生成API文档相关     开始  -->
+            <!--
         	<plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -105,8 +106,9 @@
                 <groupId>org.asciidoctor</groupId>
                 <artifactId>asciidoctor-maven-plugin</artifactId>
                 <version>1.5.3</version>
-
+-->
                 <!-- Configure generic document generation settings -->
+            <!--
                 <configuration>
                     <sourceDirectory>${project.basedir}/docs/asciidoc</sourceDirectory>
                     <sourceDocumentName>index.adoc</sourceDocumentName>
@@ -121,8 +123,10 @@
                         <generated>${project.build.directory}/asciidoc</generated>
                     </attributes>
                 </configuration>
+                -->
                 <!-- Since each execution can only handle one backend, run
                      separate executions for each desired output type -->
+                <!--
                 <executions>
                     <execution>
                         <id>output-html</id>
@@ -132,11 +136,12 @@
                         </goals>
                         <configuration>
                             <backend>html5</backend>
-                            <!--<outputDirectory>${project.basedir}/docs/asciidoc/html</outputDirectory>-->
+                            < ! - - <outputDirectory>${project.basedir}/docs/asciidoc/html</outputDirectory>- -  >
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+            -->
             <!-- 2018-01-24 生成API文档相关    结束  -->
             <!-- jdk编译插件 -->
             <plugin>
